@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NoteApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-controller="NoteCtrl">
+
+<input type="text" size="45" ng-model="noteTitle" placeholder="Title...">
+<br>
+<textarea rows="10" cols="50" ng-model="noteText" placeholder="Say something..."></textarea>
+<br>
+<button type="submit" ng-click="addNote()">Add</button><scan class="errMsg">{{errMsg}}</scan>
+<br>
+<br>
+<table ng-repeat="n in notes">
+    <tr>
+        <td>
+            <div class="title">{{n.noteTitle}}</div>
+            <div class="body">{{n.noteText}}</div>
+            <div><button type="submit" ng-click="removeNote(n)">Remove</button></div>
+        </td>
+
+
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+.title {
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.body {
+    padding: 5px;
+    font-size: 1em;
+}
+
+div {
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    font-family: "Arial", sans-serif;
+}
+
+.errMsg {
+    padding-left: 15px;
+}
